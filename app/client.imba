@@ -9,6 +9,7 @@ tag app
 		$bg2: cooler9
 		$angle-position: 67%
 		bg: $bg2
+		pb:10rem
 		.bio
 			pt:6rem
 			d:flex fld:column ta:center
@@ -47,7 +48,7 @@ tag app
 						fw:bold
 						tween:all transition-duration:.2s
 						@hover
-							hue:rose
+							hue:amber
 						@active
 							bg:hue3 c:hue8
 					<a href="https://khmer-typing.ericvida.com" target="_blank"> "Khmer Typing Game"
@@ -56,7 +57,7 @@ tag app
 					<a href="https://cham-dictionary.ericvida.com" target="_blank"> "English Cham Dictionary"
 					# <a href="https://amazon-clone.ericvida.com" target="_blank"> "Amazon Clone"
 				<Card>
-					<h1 slot="title"> "Developer Apps"
+					<h1 slot="title"> "Front End Mentor Challenges"
 					css a
 						c:hue7
 						bg:hue2 
@@ -66,10 +67,26 @@ tag app
 						fw:bold
 						tween:all transition-duration:.2s
 						@hover
-							hue:rose
+							hue:amber
 						@active
 							bg:hue3 c:hue8
-					<a href="https://html2imba.tirado.app/"> "html2imba"
+					<a href="https://femc-fourcard.ericvida.com/"> "Four Card Challenge"
+					<a href="https://femc-job-listings.ericvida.com"> "Job Listings"
+				<Card>
+					<h1 slot="title"> "Imba Tools"
+					css a
+						c:hue7
+						bg:hue2 
+						p:3 
+						rd:5px
+						td:none 
+						fw:bold
+						tween:all transition-duration:.2s
+						@hover
+							hue:amber
+						@active
+							bg:hue3 c:hue8
+					<a href="https://html2imba.ericvida.com/"> "html2imba"
 					<a href="https://css2imba.ericvida.com"> "css2imba"
 
 tag Card
