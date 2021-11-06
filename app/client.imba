@@ -19,7 +19,7 @@ tag app
 				bg:amber1 
 				rd:41% size:11rem
 				mx:auto
-			h1
+			& > h1
 				c:orange5
 			p c:cooler9 fw:bold fs:3rem ta:center
 	
@@ -36,50 +36,61 @@ tag app
 				<marker-line>
 			<div>
 				css d:grid gtc:1fr @sm:repeat(2,1fr) g:2rem max-width:800px mx:auto
-				<cambodia-apps>
-				<other-apps>
+				<Card>
+					<h1 slot="title"> "Cambodia Apps"
+					css a
+						c:hue7
+						bg:hue2 
+						p:3 
+						rd:5px
+						td:none 
+						fw:bold
+						tween:all transition-duration:.2s
+						@hover
+							hue:rose
+						@active
+							bg:hue3 c:hue8
+					<a href="https://khmer-typing.ericvida.com" target="_blank"> "Khmer Typing Game"
+					<a href="https://carrier-checker.ericvida.com" target="_blank"> "Cambodia Cell Carrier Checker"
+					<a href="https://khmer-phonemer.ericvida.com/" target="_blank"> "Khmer Transliterator"
+					<a href="https://cham-dictionary.ericvida.com" target="_blank"> "English Cham Dictionary"
+					# <a href="https://amazon-clone.ericvida.com" target="_blank"> "Amazon Clone"
+				<Card>
+					<h1 slot="title"> "Developer Apps"
+					css a
+						c:hue7
+						bg:hue2 
+						p:3 
+						rd:5px
+						td:none 
+						fw:bold
+						tween:all transition-duration:.2s
+						@hover
+							hue:rose
+						@active
+							bg:hue3 c:hue8
+					<a href="https://html2imba.tirado.app/"> "html2imba"
+					<a href="https://css2imba.ericvida.com"> "css2imba"
 
 tag Card
 	css hue:cool
-		bg:white
+		bdt:5px solid amber1
+		bg: white
 		shadow:xs, xl, xl, xl
 		p:2rem pt:.5rem
 		rd:sm
 		h1 c:cooler9
-		div 
+		.link-wrapper
 			d:flex 
 			fld:column 
-			g:2 
-		a 
-			c:hue7
-			bg:hue2 
-			p:3 
-			rd:5px
-			td:none 
-			fw:bold
-			tween:all transition-duration:.2s
-			@hover
-				hue:rose
-			@active
-				bg:hue3 c:hue8
-
-
-tag cambodia-apps < Card
+			g:2			
 	<self[o@off:0] ease>
-		<h1> "Cambodia Apps"
-		<div>
-			<a href="https://khmer.ericvida.com/" target="_blank"> "Khmer Transliterator"
-			<a href="https://cham.ericvida.com" target="_blank"> "English Cham Dictionary"
-			# <a href="https://type.ericvida.com" target="_blank"> "Khmer Typing Game"
-			# <a href="https://cell.ericvida.com" target="_blank"> "Find Cambodia Carrier"
-			# <a href="https://amazon-clone.ericvida.com" target="_blank"> "Amazon Clone"
+		<slot name="title"> "Cambodia Apps"
+		<div.link-wrapper>
+			<slot>
 
 tag other-apps < Card
 	<self>
-		<h1> "Developer Apps"
-		<div>
-			<a href="https://html2imba.tirado.app/"> "html2imba"
-			<a href="https://css2imba.ericvida.com"> "css2imba"
 
 tag marker-line
 	css hue:amber
