@@ -70,8 +70,8 @@ tag app
 							hue:amber
 						@active
 							bg:hue3 c:hue8
-					<a href="https://femc-four-card.ericvida.com/"> "Four Card Challenge"
-					<a href="https://femc-job-listings.ericvida.com"> "Job Listings"
+					<a href="https://femc-four-card.ericvida.com/" target="_blank"> "Four Card Challenge"
+					<a href="https://femc-job-listings.ericvida.com" target="_blank"> "Job Listings"
 				<Card>
 					<h1 slot="title"> "Imba Tools"
 					css a
@@ -86,8 +86,8 @@ tag app
 							hue:amber
 						@active
 							bg:hue3 c:hue8
-					<a href="https://html2imba.ericvida.com/"> "html2imba"
-					<a href="https://css2imba.ericvida.com"> "css2imba"
+					<a href="https://html2imba.ericvida.com/" target="_blank"> "html2imba"
+					<a href="https://css2imba.ericvida.com" target="_blank"> "css2imba"
 
 tag Card
 	css hue:cool
