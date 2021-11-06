@@ -70,7 +70,7 @@ tag app
 							hue:amber
 						@active
 							bg:hue3 c:hue8
-					<a href="https://femc-fourcard.ericvida.com/"> "Four Card Challenge"
+					<a href="https://femc-four-card.ericvida.com/"> "Four Card Challenge"
 					<a href="https://femc-job-listings.ericvida.com"> "Job Listings"
 				<Card>
 					<h1 slot="title"> "Imba Tools"
