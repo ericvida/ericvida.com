@@ -1,0 +1,16 @@
+{
+  "name": "tirado.app-2",
+  "scripts": {
+    "start": "imba -w server.imba",
+    "build": "imba build -P server.imba"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "imba": "^2.0.0-alpha.146"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com//tirado.app-2",
+  "author": "Author Name (https://github.com/)",
+  "license": "ISC"
+}
